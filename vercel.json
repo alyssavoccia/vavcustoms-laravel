@@ -10,6 +10,10 @@
             "dest": "/build/$1"
         },
         {
+            "src": "/(.*\\.(?:png|jpg|jpeg|gif|svg))$",
+            "dest": "/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
