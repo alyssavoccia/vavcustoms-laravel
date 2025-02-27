@@ -9,8 +9,9 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -57,7 +58,8 @@
                 <div>
                     <h2 class="text-4xl text-zinc-800 font-bold">Hey, I'm Vince</h2>
                     <p class="text-xl text-stone-700 leading-relaxed mt-3">Meet Vince, a skilled woodworker with over 20 years of experience in the trade. When not bringing his creative visions to life through woodworking, he can be found out on the boat, enjoying a peaceful day of fishing. With a passion for both the art of woodworking and the great outdoors, Vince brings a unique perspective to each of his projects.</p>
-                    <a class="inline-block text-lg font-semibold mt-6 px-10 py-3 border-2 border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 rounded-sm transition-all duration-200" href="the-shop.html">Read More</a>
+                    <a wire:navigate href="#" class="inline-block w-full px-6 py-2 mt-4 font-medium text-zinc-800 text-md transition duration-300 border border-zinc-800 rounded lg:w-auto hover:text-white hover:bg-zinc-800 focus:outline-none focus:bg-zinc-800">Read More</a>
+                    {{-- <a class="inline-block text-lg font-semibold mt-6 px-10 py-3 border-2 border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 rounded-sm transition-all duration-200" href="the-shop.html">Read More</a> --}}
                 </div>
             </div>
         </section>
@@ -104,7 +106,8 @@
                     <p class="text-xl">See the shop setup, what tools I use, and what I recommend to get started!</p>
                 </div>
                 <div class="justify-self-center">
-                    <a class="text-xl font-semibold px-20 py-5 bg-[#c6ac8f] hover:bg-[#d1bda5] transition-all duration-200" href="the-shop.html">Check out The Shop!</a>
+                <a wire:navigate href="#" class="inline-block w-full px-10 py-3 mt-4 font-medium text-white text-lg transition duration-300 bg-stone-500 rounded lg:w-auto hover:bg-stone-600 focus:outline-none focus:bg-stone-600">Check out The Shop!</a>
+                {{-- <a class="text-xl font-semibold px-20 py-5 bg-[#c6ac8f] hover:bg-[#d1bda5] transition-all duration-200" href="the-shop.html">Check out The Shop!</a> --}}
                 </div>
             </div>
         </div>
@@ -158,7 +161,8 @@
                     <p class="text-xl">Let us know how we can help!</p>
                 </div>
                 <div class="justify-self-center">
-                    <a class="text-xl font-semibold px-20 py-5 bg-[#c6ac8f] hover:bg-[#d1bda5] transition-all duration-200" href="custom-build.html">Custom Build</a>
+                    <a wire:navigate href="#" class="inline-block w-full px-10 py-3 mt-4 font-medium text-white text-lg transition duration-300 bg-stone-500 rounded lg:w-auto hover:bg-stone-600 focus:outline-none focus:bg-stone-600">Custom Build</a>
+                    {{-- <a class="text-xl font-semibold px-20 py-5 bg-[#c6ac8f] hover:bg-[#d1bda5] transition-all duration-200" href="custom-build.html">Custom Build</a> --}}
                 </div>
             </div>
         </section>
@@ -171,6 +175,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-at-sign"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>
             </div>
         </footer>
-        {{-- <livewire:store.cart /> --}}
+        <livewire:store.cart />
     </body>
 </html>

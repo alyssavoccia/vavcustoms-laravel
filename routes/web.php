@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Store\StoreHome;
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')
+    ->name('home');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

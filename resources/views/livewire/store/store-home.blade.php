@@ -63,7 +63,7 @@
                             <p class="text-sm font-medium text-gray-900">${{ $product['variants'][0]['price'] }}</p>
                         </div>
                     </div>
-                    <button type="button" wire:click="$dispatch('add-to-cart', { variantId: {{ $product['variants'][0]['product_id'] }}, productId: {{ $product['variants'][0]['id'] }} })" class="mt-2 flex items-center justify-center rounded-md border border-transparent bg-stone-500 px-6 py-2 text-sm font-medium text-white hover:bg-stone-600 focus:outline-hidden">Add to Cart</button>
+                    <button type="button" wire:click="$dispatch('add-to-cart', { variantId: {{ $product['variants'][0]['product_id'] }}, productId: {{ $product['variants'][0]['id'] }} })" class="mt-2 flex items-center justify-center rounded border border-transparent bg-stone-500 px-6 py-2 text-sm font-medium text-white hover:bg-stone-600 focus:outline-hidden disabled:bg-stone-600" @if ($product['variants'][0]['available'] == false) disabled @endif>Add to Cart</button>
                 </div>
             @endforeach
         </div>

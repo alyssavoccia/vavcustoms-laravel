@@ -46,7 +46,7 @@ class Cart extends Component {
                 'image' => $product['images'][0]['src'] ?? null,
             ];
 
-            Log::info(print_r($product, true));        
+            // Log::info(print_r($product, true));        
             Session::put('cart', $this->cart);
 
             $this->cartTotal();
