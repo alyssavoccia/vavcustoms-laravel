@@ -58,7 +58,7 @@
                 <div>
                     <h2 class="text-4xl text-zinc-800 font-bold">Hey, I'm Vince</h2>
                     <p class="text-xl text-stone-700 leading-relaxed mt-3">Meet Vince, a skilled woodworker with over 20 years of experience in the trade. When not bringing his creative visions to life through woodworking, he can be found out on the boat, enjoying a peaceful day of fishing. With a passion for both the art of woodworking and the great outdoors, Vince brings a unique perspective to each of his projects.</p>
-                    <a wire:navigate href="#" class="inline-block w-full px-6 py-2 mt-4 font-medium text-zinc-800 text-md transition duration-300 border border-zinc-800 rounded lg:w-auto hover:text-white hover:bg-zinc-800 focus:outline-none focus:bg-zinc-800">Read More</a>
+                    <a wire:navigate href="#" class="inline-block w-auto px-6 py-2 mt-4 font-medium text-zinc-800 text-md transition duration-300 border border-zinc-800 rounded lg:w-auto hover:text-white hover:bg-zinc-800 focus:outline-none focus:bg-zinc-800">Read More</a>
                     {{-- <a class="inline-block text-lg font-semibold mt-6 px-10 py-3 border-2 border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 rounded-sm transition-all duration-200" href="the-shop.html">Read More</a> --}}
                 </div>
             </div>
@@ -100,7 +100,7 @@
         </section>
         <!-- THE SHOP -->
         <div class="pt-28 px-10 max-w-6xl mx-auto">
-            <div class="grid grid-cols-2 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="text-center">
                     <h2 class="text-2xl text-zinc-800 font-bold">Want to see what goes on behind the scenes?</h2>
                     <p class="text-xl">See the shop setup, what tools I use, and what I recommend to get started!</p>
@@ -155,7 +155,7 @@
         </div>
         <!-- CUSTOM BUILD CTA -->
         <section class="py-28 px-10 max-w-5xl mx-auto">
-            <div class="grid grid-cols-2 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="text-center">
                     <h2 class="text-3xl text-zinc-800 font-bold">Have a custom project in mind?</h2>
                     <p class="text-xl">Let us know how we can help!</p>

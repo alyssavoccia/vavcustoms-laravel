@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen dark:bg-gray-900">
+        <div class="min-h-screen dark:bg-zinc-900">
             <livewire:welcome.navigation />
             <div class="fixed bg-white shadow border-b border-gray-200 left-0 top-[60px] w-full">
                 <ul class="flex gap-3 px-6 py-3">

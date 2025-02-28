@@ -11,7 +11,7 @@
         </div>
     </header>
     <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-bold">Shop by Category</h2>
+        <h2 class="text-2xl font-bold dark:text-zinc-100">Shop by Category</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <a>
 
@@ -27,14 +27,14 @@
                 <h3 class="font-bold text-lg">Customizable</h3>
                 <p class="text-gray-700">We want this to be your dream item. We support fully custom builds, down to the finish and stain.</p>
             </div>
-            <div class="flex flex-col justify-center items-center text-center">
+            <div class="flex flex-col gap-y-2 justify-center items-center text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                 </svg>                  
                 <h3 class="font-bold text-lg">Quick Response</h3>
                 <p class="text-gray-700">No one likes waiting. We strive to respond to customers and ship orderes as quickly as possible.</p>
             </div>
-            <div class="flex flex-col justify-center items-center text-center">
+            <div class="flex flex-col gap-y-2 justify-center items-center text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                 </svg>                  
@@ -44,17 +44,16 @@
         </div>
     </section>
     <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-bold">Shop All Products</h2>
+        <h2 class="text-2xl font-bold dark:text-zinc-100">Shop All Products</h2>
         <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             @foreach($products as $product)
                 <div>
                     <div class="group relative">
-                        <img src="{{ $product['images'][0]['src'] }}" alt="{{ $product['title'] }}" class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <img src="{{ $product['images'][0]['src'] }}" alt="{{ $product['title'] }}" class="aspect-square w-full rounded bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
                         <div class="mt-4 flex justify-between">
                             <div>
                                 <h3 class="text-gray-700">
-                                <a>
-                                {{-- <a wire:navigate href="{{ route('product-detail', [$product['variants'][0]['product_id'], $product['handle']]) }}"> --}}
+                                <a wire:navigate href="{{ route('product-detail', [$product['variants'][0]['product_id'], $product['handle']]) }}">
                                     <span aria-hidden="true" class="absolute inset-0"></span>
                                     {{ $product['title'] }}
                                 </a>

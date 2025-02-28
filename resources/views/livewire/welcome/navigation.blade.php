@@ -1,4 +1,4 @@
-<nav x-data="{ isOpen: false }" class="fixed top-0 left-0 w-full bg-zinc-800 shadow dark:bg-gray-800 z-[50]">
+<nav x-data="{ isOpen: false }" class="fixed top-0 left-0 w-full bg-zinc-800 shadow dark:bg-zinc-800 z-[50]">
     <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
             <a wire:navigate href="/">
@@ -20,9 +20,9 @@
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
             <div class="flex flex-col md:flex-row md:items-center md:mx-6">
                 <a wire:navigate href="{{ route('home')}}" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-300 dark:hover:text-stone-200 md:mx-4 md:my-0">Home</a>
+                <a wire:navigate href="#" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-300 dark:hover:text-stone-200 md:mx-4 md:my-0">The Shop</a>
+                <a wire:navigate href="#" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-300 dark:hover:text-stone-200 md:mx-4 md:my-0">Custom Build</a>
                 <a wire:navigate href="{{ route('store') }}" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-200 dark:hover:text-stone-200 md:mx-4 md:my-0">Store</a>
-                <a wire:navigate href="#" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-300 dark:hover:text-stone-200 md:mx-4 md:my-0">Contact</a>
-                <a wire:navigate href="#" class="my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-stone-300 dark:hover:text-stone-200 md:mx-4 md:my-0">About</a>
             </div>
 
             <div class="flex justify-center">
