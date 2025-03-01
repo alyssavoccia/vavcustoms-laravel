@@ -1,8 +1,8 @@
 {
     "version": 2,
-      "framework": null,
+    "framework": null,
     "functions": {
-        "api/index.php": { 
+        "api/index.php": {
             "runtime": "vercel-php@0.7.3"
         }
     },
@@ -16,7 +16,7 @@
             "dest": "/build/$1"
         },
         {
-            "src": "/(.*\\.(?:png|jpg|jpeg|gif|svg))$",
+            "src": "/(.*\\.(?:png|jpg|jpeg|gif|svg|css|js|woff2|ttf))$",
             "dest": "/$1"
         },
         {
