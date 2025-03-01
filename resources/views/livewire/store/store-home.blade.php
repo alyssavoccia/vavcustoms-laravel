@@ -11,7 +11,7 @@
         </div>
     </header>
     <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-bold dark:text-zinc-100">Shop by Category</h2>
+        <h2 class="text-2xl font-bold">Shop by Category</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <a>
 
@@ -44,7 +44,7 @@
         </div>
     </section>
     <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-bold dark:text-zinc-100">Shop All Products</h2>
+        <h2 class="text-2xl font-bold">Shop All Products</h2>
         <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             @foreach($products as $product)
                 <div>
