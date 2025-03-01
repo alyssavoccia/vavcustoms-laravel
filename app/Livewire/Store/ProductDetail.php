@@ -19,6 +19,8 @@ class ProductDetail extends Component {
 
         $this->product = $response->json()['product'] ?? null;
 
+        Log::info(print_r($this->product, true));
+
         if (!$this->product) {
             abort(404);
         } else {
