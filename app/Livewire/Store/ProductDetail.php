@@ -11,6 +11,7 @@ class ProductDetail extends Component {
     public $main_image = null;
 
     public function mount($variantId, $productHandle) {
+        Log::info("Livewire ProductDetail mounted with: ID = $variantId, Handle = $productHandle");
         $store_domain = env('SHOPIFY_STORE_DOMAIN');
         $response = Http::withHeaders([
             'X-Shopify-Access-Token' => env('SHOPIFY_ADMIN_API_ACCESS_TOKEN')
