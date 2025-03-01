@@ -6,8 +6,19 @@
             "runtime": "vercel-php@0.7.3"
         }
     },
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
+    "routes": [
+        {
+            "src": "/build/(.*)",
+            "dest": "/build/$1"
+        },
+        {
+            "src": "/(.*\\.(?:png|jpg|jpeg|gif|svg))$",
+            "dest": "/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
     ],
     "env": {
         "APP_ENV": "production",

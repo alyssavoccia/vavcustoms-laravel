@@ -53,7 +53,7 @@
                         <div class="mt-4 flex justify-between">
                             <div>
                                 <h3 class="text-gray-700">
-                                <a wire:navigate href="{{ route('product-detail', [$product['variants'][0]['product_id'], $product['handle']]) }}">
+                                <a href="{{ route('product-detail', [$product['variants'][0]['product_id'], $product['handle']]) }}">
                                     <span aria-hidden="true" class="absolute inset-0"></span>
                                     {{ $product['title'] }}
                                 </a>
