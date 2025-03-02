@@ -8,7 +8,7 @@
                         <!-- Big Image -->
                         <div id="main-image-container">
                             <img id="main-image"
-                                class="h-auto w-full max-w-full rounded-md object-cover object-center md:h-[480px]"
+                                class="h-auto w-full max-w-full rounded object-cover object-center md:h-[480px]"
                                 src="{{ $main_image }}"
                                 alt="{{ $product['title'] }}"
                             />
@@ -17,11 +17,13 @@
                         <div class="grid grid-cols-5 gap-4">
                             @foreach ($product['images'] as $image)
                                 <div>
-                                    <img onclick="changeImage(this)"
-                                    data-full="/assets/images/single-product/1.jpg"
-                                    src="{{ $image['src'] }}"
-                                    class="object-cover object-center h-full w-full rounded-lg cursor-pointer"
-                                    alt="Gallery Image 1" />
+                                    <img 
+                                        onclick="changeImage(this)"
+                                        data-full="/assets/images/single-product/1.jpg"
+                                        src="{{ $image['src'] }}"
+                                        class="object-cover object-center h-full w-full rounded cursor-pointer"
+                                        alt="Gallery Image 1"
+                                    />
                                 </div>
                             @endforeach
                         </div>
