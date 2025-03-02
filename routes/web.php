@@ -21,7 +21,4 @@ Route::get('/store', StoreHome::class)
 Route::get('/store/{variantId}/{productHandle}', ProductDetail::class)
     ->name('product-detail');
 
-Route::get('/test-livewire', ProductDetail::class);
-
-
 require __DIR__.'/auth.php';
