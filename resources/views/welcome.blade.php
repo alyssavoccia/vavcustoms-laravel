@@ -19,7 +19,7 @@
     <body class="antialiased font-sans">
         <livewire:welcome.navigation />
         <!-- HERO -->
-        <section class="w-full md:bg-center bg-cover bg-fixed" style="background-image: url({{ asset('images/hero-bg.png') }});">
+        <section class="w-auto md:w-full md:bg-center bg-cover bg-fixed" style="background-image: url({{ asset('images/hero-bg.png') }});">
             <div class="flex items-center justify-center w-full h-screen bg-zinc-900 bg-opacity-50">
                 <div class="text-center">
                 <div class="container px-4 mx-auto">
