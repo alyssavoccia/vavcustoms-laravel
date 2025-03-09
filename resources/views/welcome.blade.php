@@ -19,7 +19,7 @@
     <body class="antialiased font-sans">
         <livewire:welcome.navigation />
         <!-- HERO -->
-        <section class="w-full bg-center bg-cover bg-fixed" style="background-image: url({{ asset('images/hero-bg.png') }});">
+        <section class="w-full md:bg-center bg-cover bg-fixed" style="background-image: url({{ asset('images/hero-bg.png') }});">
             <div class="flex items-center justify-center w-full h-screen bg-zinc-900 bg-opacity-50">
                 <div class="text-center">
                 <div class="container px-4 mx-auto">
@@ -30,20 +30,20 @@
                 </div>
             </div>
         </section>
-        <!-- OUR WORK -->
+        <!-- CUSTOM WORK -->
         <section class="pt-28 px-10 max-w-screen-2xl mx-auto z-0">
             <h2 class="text-center text-4xl text-zinc-800 font-bold">Custom Work</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             <div class="relative">
-                <img class="h-full" src="{{ asset('images/grid-images/table1.jpg') }}" />
+                <img class="w-full h-auto" src="{{ asset('images/grid-images/table1.jpg') }}" />
                 <h3 class="text-zinc-100 text-xl font-semibold bg-zinc-800 px-4 py-2 absolute bottom-0 left-0">Furniture</h3>
             </div>
             <div class="relative">
-                <img class="h-full" src="{{ asset('images/grid-images/cutting1.jpg') }}" />
+                <img class="w-full h-auto" src="{{ asset('images/grid-images/cutting1.jpg') }}" />
                 <h3 class="text-zinc-100 text-xl font-semibold bg-zinc-800 px-4 py-2 absolute bottom-0 left-0">CNC Projects</h3>
             </div>
             <div class="relative">
-                <img class="h-full" src="{{ asset('images/grid-images/vanity1.jpg') }}" />
+                <img class="w-full h-auto" src="{{ asset('images/grid-images/vanity1.jpg') }}" />
                 <h3 class="text-zinc-100 text-xl font-semibold bg-zinc-800 px-4 py-2 absolute bottom-0 left-0">Cabinets/Vanities</h3>
             </div>
             </div>
