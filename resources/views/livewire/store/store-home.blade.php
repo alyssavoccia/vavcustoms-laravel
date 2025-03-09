@@ -2,7 +2,7 @@
     <header>
         <div class="w-full bg-center bg-cover h-[38rem]" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('images/grid-images/shelf3.jpg') }}');">
             <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
-                <div class="text-center">
+                <div class="text-center px-4 md:px-0">
                     <h1 class="text-3xl font-bold text-white lg:text-5xl">Custom Woodwork is Here</h1>
                     <p class="text-white max-w-2xl my-3 text-lg">Have a specific piece that you're looking for? We're able to turn your dream item into a reality. Check out the custom build page for more info.</p>
                     <button class="w-full px-6 py-2 mt-4 font-medium text-white text-md transition duration-300 bg-stone-500 rounded lg:w-auto hover:bg-stone-600 focus:outline-none focus:bg-stone-600">Custom Build</button>
@@ -10,16 +10,29 @@
             </div>
         </div>
     </header>
-    <section class="container mx-auto my-16">
+    <section class="container mx-auto my-16 px-4 md:px-0">
         <h2 class="text-2xl font-bold">Shop by Category</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a>
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            <a class="relative flex items-center justify-center h-[400px] overflow-hidden shadow rounded after:bg-black/50 hover:after:bg-black/20 after:w-full after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:duration-300" href="shop/woodwork">
+                <p class="absolute text-center text-gray-100 text-xl font-semibold z-10">Woodwork</p>
+                <img class="h-full w-full object-cover" src="{{ asset('images/grid-images/bathroom1.jpg') }}" alt="Bathroom Mirror & Vanity" />
+            </a>
+            <a class="relative flex items-center justify-center h-[400px] overflow-hidden shadow rounded after:bg-black/50 hover:after:bg-black/20 after:w-full after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:duration-300" href="shop/woodwork">
+                <p class="absolute text-center text-gray-100 text-xl font-semibold z-10">Plans</p>
+                <img class="h-full w-full object-cover" src="{{ asset('images/plans.jpg') }}" alt="Bathroom Mirror & Vanity" />
+            </a>
+            <a class="relative flex items-center justify-center h-[400px] overflow-hidden shadow rounded after:bg-black/50 hover:after:bg-black/20 after:w-full after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:duration-300" href="shop/woodwork">
+                <p class="absolute text-center text-gray-100 text-xl font-semibold z-10">Tools</p>
+                <img class="h-full w-full object-cover" src="{{ asset('images/tools.jpeg') }}" alt="Bathroom Mirror & Vanity" />
+            </a>
+            <a class="relative flex items-center justify-center h-[400px] overflow-hidden shadow rounded after:bg-black/50 hover:after:bg-black/20 after:w-full after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:duration-300" href="shop/woodwork">
+                <p class="absolute text-center text-gray-100 text-xl font-semibold z-10">Merch</p>
+                <img class="h-full w-full object-cover" src="{{ asset('images/apparel.jpg') }}" alt="Bathroom Mirror & Vanity" />
             </a>
         </div>
     </section>
     <section class="bg-stone-200">
-        <div class="container mx-auto py-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="container mx-auto px-4 md:px-0 py-16 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="flex flex-col gap-y-2 justify-center items-center text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
@@ -43,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="container mx-auto my-16">
+    <section class="container mx-auto my-16 px-4 md:px-0">
         <h2 class="text-2xl font-bold">Shop All Products</h2>
         <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             @foreach($products as $product)
