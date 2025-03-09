@@ -23,7 +23,7 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen">
             <livewire:welcome.navigation />
-            <div class="fixed bg-white shadow border-b border-gray-200 left-0 top-[56px] w-full z-50">
+            <div class="fixed bg-white shadow border-b border-gray-200 left-0 top-[56px] w-full z-40">
                 <ul class="flex gap-3 px-6 py-3">
                     <li><a wire:navigate href="{{ route('store') }}" class="font-bold">Store Home</a></li>
                     <li><a>Woodwork</a></li>
